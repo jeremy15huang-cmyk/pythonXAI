@@ -48,3 +48,30 @@ print("apple" * 3) #字串乘法
 name = "apple"
 age = 18
 print(f"Hello, my name is {name}, I'm {age} years old.")  # f-string
+
+print(len ("apple")) #len()是一個函式，可以計算字串的長度
+print(len("，")) #len()是一個函式，可以計算字串的長度
+#type()#可以查看變數的型態
+print(type(1)) #<class 'int'>
+print(type(1.0)) #<class 'float'>
+print(type("apple")) #<class 'str'>
+print(type(True)) #<class 'bool'>
+
+#型態轉換
+print(int(1.0)) #float轉int
+print(float(1)) #int轉換為float
+print(str(1)) #int轉換為str
+print(bool(1)) #int轉換為bool
+print(int (1.234)) #float轉換為int
+print(float("1.234")) #str轉換為float
+print(str(1.234)) #float轉換為str
+print(bool(1.234)) #float轉換為bool
+#print(int("hello")) #這樣會抱錯，因為字串裡面如果有非數字的字元，無法轉換為整數
+
+#請使用者輸入半徑，計算圓面積
+r= float(input("請輸入圓的半徑: ")) 
+print(f"圓面積為: {3.14 * r ** 2}") 
+
+a=int(input("請輸入國文其中成績: ")) 
+b=int(input("請輸入成績國文期末成績: "))
+print(f"國文成績為:{(a + b) / 2}")
